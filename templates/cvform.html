@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+
+
+        <title>Smart Interviewer</title>
+
+        <link rel="stylesheet" href="../static/css/cv1.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
+        <link href="../static/bot/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/bot/css/animate.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/bot/vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/bot/vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/bot/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/bot/vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/bot/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/bot/css/global/global.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="../static//img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="../static/bot/img/apple-touch-icon.png">
+		<script type='text/javascript' src="../static/bot/js/sdk.js"></script>
+
+
+    </head>
+    <body background="../static/img/cv/cvBackground.jpg">
+ <!--background="../static/img/cv/cvBackground.jpg"-->
+
+
+     <header id="head" class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
+            <!-- navbar -->
+            <div class="s-header__navbar">
+                <div class="s-header__container">
+                    <div class="s-header__navbar-row">
+
+                    <div class="s-header__navbar-row-col">
+                            <!-- logo -->
+                            <div class="s-header__logo">
+                                <a href="/home" class="s-header__logo-link">
+                                    <img class="s-header__logo-img s-header__logo-img-default" src="../static/bot/img/logo.png" >
+                                    <img class="s-header__logo-img s-header__logo-img-shrink" src="../static/bot/img/logo-dark.png" >
+                                </a>
+                            </div>
+                        </div>
+                        <div style="color: #1b1e21" class="s-header__navbar-row-col">
+                            <!-- Trigger -->
+                            <p style="margin-top:15px;float:right;color: #1b1e21">Menu</p>
+                            <a href="javascript:void(0);" class="s-header__trigger js__trigger">
+                                <span class="s-header__trigger-icon"></span>
+                                <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
+                                    <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+                                </svg>
+                            </a>
+                            <!-- End Trigger -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Navbar -->
+
+            <!-- Overlay -->
+            <div id="overlay" class="s-header-bg-overlay js__bg-overlay">
+                <!-- Nav -->
+                <nav class="s-header__nav js__scrollbar">
+                    <div class="container-fluid">
+                        <!-- Menu List -->
+                        <ul class="list-unstyled s-header__nav-menu">
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="/home">Go to the home page</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="/history">View results history</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="/">log out</a></li>
+
+                        </ul>
+                        <!-- End Menu List -->
+                    </div>
+                </nav>
+                <!-- End Nav -->
+            </div>
+            <!-- End Overlay -->
+        </header>
+        <!--========== END HEADER ==========-->
+
+
+
+
+
+
+
+
+        <!-- multistep form -->
+        <form id="msform">
+          <!-- progressbar -->
+          <ul id="progressbar">
+            <li class="active">Account Setup</li>
+            <li>Social Profiles</li>
+            <li>Personal Details</li>
+          </ul>
+          <!-- fieldsets -->
+          <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">Step 1</h3>
+            <input type="text" id="name" placeholder="Name" required/>
+            <input type="number" id="age" placeholder="Age" required/>
+            <input type="text" id="school" placeholder="School" required/>
+            <input type="text" id="uni" placeholder="University"required />
+            <input type="date" id="dob"  required />
+            <input type="email" id="email"placeholder="Email"required>
+            <input type="number" id="number"placeholder="Telephone Number"required/>
+
+
+
+
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Basic Information</h2>
+            <h3 class="fs-subtitle">Step 2</h3>
+            <textarea rows="4" cols="50" id="weak" placeholder="Weaknesses" required></textarea>
+            <textarea rows="4" cols="50" id="strength" placeholder="Strengths" required></textarea>
+            <input type="text" name="twitter" id = "idlcompany" placeholder="Ideal Company"required />
+            <textarea rows="4" cols="50" id="ftech" placeholder="Familiar Technologies"required></textarea>
+
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Project Details</h2>
+            <h3 class="fs-subtitle">Step 3</h3>
+            <hr><br>
+            <h3 class="fs-subtitle">Project One</h3>
+            <input type="text" name="fname" id="pro1" placeholder="Project Name" required/>
+            <h4 class="fs-subtitle">Technologies Used</h4><br>
+            <input class="container" type="checkbox" id="t1b1" name="technology" value="Java"> Java
+            <input class="container" type="checkbox" id="t1b2" name="technology" value="Python" checked> Python
+            <input class="container" type="checkbox" id="t1b3" name="technology" value="AngularJS" checked>AngularJS<br>
+
+            <hr><br>
+            <h3 class="fs-subtitle">Project Two </h3>
+            <input type="text" name="fname" id="pro2" placeholder="Project Name"required />
+            <h4 class="fs-subtitle">Technologies Used</h4><br>
+            <input class="container" type="checkbox" id="t2b1" name="technology" value="Java"> Java
+            <input class="container" type="checkbox" id="t2b2" name="technology" value="Python" checked> Python
+            <input class="container" type="checkbox" id="t2b3" name="technology" value="AngularJS" checked>AngularJS<br>
+
+            <hr><br>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" onclick="cvDetail()" />
+          </fieldset>
+        </form>
+
+    <!-- Plugin JavaScript -->
+        <script type="text/javascript" src="../static/vendor/jquery.min.js"></script>
+        <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+
+    <script type="text/javascript" src="../static/js/cv.js"></script>
+    <script>
+      function cvDetail(){
+        var fullname = document.getElementById("name").value;
+        var userage = document.getElementById("age").value;
+        var userschool = document.getElementById("school").value;
+        var useruni = document.getElementById("uni").value;
+        var userdob = document.getElementById("dob").value;
+        var useremail = document.getElementById("email").value;
+        var usernumber = document.getElementById("number").value;
+
+        console.log(fullname);
+        console.log(userage);
+        console.log(userschool);
+        console.log(useruni);
+        console.log(userdob);
+        console.log(useremail);
+        console.log(usernumber);
+
+        var weakness = document.getElementById("weak").value;
+        var strength = document.getElementById("strength").value;
+        var idlcomp = document.getElementById("idlcompany").value;
+        var famtech = document.getElementById("ftech").value;
+
+        console.log(weakness);
+        console.log(strength);
+        console.log(idlcomp);
+        console.log(famtech);
+
+        var proone = document.getElementById("pro1").value;
+        var protwo = document.getElementById("pro2").value;
+        console.log(proone);
+        console.log(protwo);
+
+        var tech1 = ""
+        var tech2 = ""
+
+        if( document.getElementById("t1b1").checked == true)
+        {
+            console.log("print checked1")
+            var val = "java"
+            tech1 = tech1.concat(",",val)
+        }
+        if( document.getElementById("t1b2").checked == true)
+        {
+            console.log("print checked2")
+            var val = "python"
+            tech1 = tech1.concat(",",val)
+        }
+        if( document.getElementById("t1b3").checked == true)
+        {
+            console.log("print checked3")
+            var val = "angularjs"
+            tech1 = tech1.concat(",",val)
+        }
+        tech1 = tech1.substr(1);
+        console.log(tech1)
+
+
+        if( document.getElementById("t2b1").checked == true)
+        {
+            console.log("print checked4")
+            var val2 = "java"
+            tech2 = tech2.concat(",",val2)
+        }
+        if( document.getElementById("t2b2").checked == true)
+        {
+            console.log("print checked5")
+            var val2 = "python"
+            tech2 = tech2.concat(",",val2)
+        }
+        if( document.getElementById("t2b3").checked == true)
+        {
+            console.log("print checked6")
+            var val2 = "angularjs"
+            tech2 = tech2.concat(",",val2)
+        }
+        tech2 = tech2.substr(1);
+        console.log(tech2)
+
+        $.post("/cvdata", {
+            flname : fullname,
+            uage : userage,
+            uschool : userschool,
+            uuni : useruni,
+            udob : userdob,
+            uemail : useremail,
+            utpno : usernumber,
+            uweak : weakness,
+            ustrength : strength,
+            uidcomp : idlcomp,
+            ufmtech : famtech,
+            uproone : proone,
+            utech1 : tech1,
+            uprotwo : protwo,
+            utech2 : tech2
+
+        });
+        alert("successfully created");
+        window.location.href = '/home';
+
+
+
+
+
+      }
+    </script>
+
+            <!-- Back To Top -->
+        <!--<a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>-->
+
+        <!--<script type="text/javascript" src="../static/bot/vendor/jquery.min.js"></script>-->
+        <script type="text/javascript" src="../static/bot/vendor/jquery.migrate.min.js"></script>
+        <script type="text/javascript" src="../static/bot/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--{#        <script type="text/javascript" src="../static/bot/vendor/jquery.smooth-scroll.min.js"></script>#}-->
+        <script type="text/javascript" src="../static/bot/vendor/jquery.back-to-top.min.js"></script>
+        <script type="text/javascript" src="../static/bot/vendor/scrollbar/jquery.scrollbar.min.js"></script>
+        <script type="text/javascript" src="../static/bot/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="../static/bot/vendor/jquery.parallax.min.js"></script>
+        <script type="text/javascript" src="../static/bot/vendor/swiper/swiper.jquery.min.js"></script>
+        <script type="text/javascript" src="../static/bot/vendor/jquery.wow.min.js"></script>
+        <script type="text/javascript" src="../static/bot/js/global.min.js"></script>
+        <script type="text/javascript" src="../static/bot/js/components/header-sticky.min.js"></script>
+        <script type="text/javascript" src="../static/bot/js/components/scrollbar.min.js"></script>
+        <script type="text/javascript" src="../static/bot/js/components/magnific-popup.min.js"></script>
+        <script type="text/javascript" src="../static/bot/js/components/swiper.min.js"></script>
+        <script type="text/javascript" src="../static/bot/js/components/wow.min.js"></script>
+    </body>
+</html>
